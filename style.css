@@ -1,0 +1,245 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+h1, h2, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.nav-link:hover {
+    color: rgba(216,97,36,255);
+}
+
+.hero-section {
+    background: url('images/background.png') no-repeat center center/cover;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+.contactbtn {
+    background-color: black;
+    color: white;
+    border: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    opacity: 0;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Optional: Add a fade transition to the captions */
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    width: 525px;
+    text-align: center;
+    border-radius: 5px;
+    height: 50px;
+}
+
+/* Carousel container settings */
+.carousel-inner {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+
+/* About Section */
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.about-box {
+    background-color: rgba(216,97,36,255);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-box h2 {
+    color: white;
+}
+#about p{
+    color:white;
+}
+
+#category {
+    background-color: rgba(254, 138, 80, 255);
+}
+
+.gift-section .image-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.gift-section img {
+    height: 350px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gift-section .image-container:hover {
+    transform: scale(1.1);
+}
+
+.gift-section h4 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+/* Contact Section */
+.contact-section h2 {
+    margin-bottom: 1.5rem;
+}
+.d-block{
+    font-size: 18px;
+}
+
+.map-container iframe {
+    width: 45%;
+    height: 300px;
+    border: 0;
+    margin-left: 60px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    h1, h2, h4 {
+        font-size: 1.5rem;
+    }
+}
+
+
+.btn:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+}
