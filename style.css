@@ -98,17 +98,69 @@ a:hover {
     transition: opacity 0.8s ease-in-out;
 }
 
-.carousel-inner {
-    position: relative;
-}
-
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
-/* Optional: Add a fade transition to the captions */
+.carousel-inner {
+    height: 60vh;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    #heroCarousel{
+        margin-top: 50px;
+    }
+
+    .carousel-inner {
+        height: 50vh;
+    }
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #heroCarousel{
+        margin-top: 50px;
+    }
+    .carousel-inner {
+        height: 40vh;
+    }
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+}
+
 .carousel-caption {
     position: absolute;
     top: 0;
@@ -122,13 +174,6 @@ a:hover {
     border-radius: 5px;
     height: 50px;
 }
-
-/* Carousel container settings */
-.carousel-inner {
-    max-height: 500px;
-    overflow: hidden;
-}
-
 
 /* About Section */
 .about-section {
@@ -192,52 +237,55 @@ a:hover {
     border: 0;
     margin-left: 60px;
 }
+@media (max-width: 768px) {
+    .navbar {
+        background-color: black;
+    }
 
-/* Footer */
+    .navbar-collapse {
+        background-color: black;
+    }
+
+    .map-container {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -70px;
+    }
+
+    .map-container iframe {
+        width: 155px;
+        height: 250px;  
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar-collapse {
+        background-color: black;
+    }
+
+    .map-container {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -70px;
+    }
+
+    .map-container iframe {
+        width: 155px;               /* Adjust width for mobile */
+        height: 250px;            /* Adjust height for better fit */
+    }
+}
+
 footer {
     background-color: #000;
     color: white;
     font-size: 0.9rem;
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .hero-heading {
-        font-size: 2rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-buttons .btn {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-
-    .carousel-caption {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-heading {
-        font-size: 1.8rem;
-    }
-
-    .hero-description {
-        font-size: 0.9rem;
-    }
-
-    .hero-buttons .btn {
-        padding: 0.5rem 1rem;
-    }
-
-    h1, h2, h4 {
-        font-size: 1.5rem;
-    }
-}
-
 
 .btn:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
